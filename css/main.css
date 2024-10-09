@@ -1,0 +1,21 @@
+@import 'reset.css';
+@import 'fonts.css';
+@import 'vars.css';
+/* ---Blocks--- */
+@import 'logo.css';
+@import 'buttons.css';
+/* ---Sections--- */
+@import 'nav.css';
+@import 'heeader.css';
+
+
+body {
+	font-family: var(--main-font);
+}
+
+.container {
+	padding: 0 15px;
+	max-width: 1200 px;
+	width: 100%;
+	margin: 0 auto;
+}

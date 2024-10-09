@@ -1,0 +1,19 @@
+:root {
+	--main-font: "DM Sans", sans-serif;
+	--secondary-font: "Poppins", sans-serif;
+
+	--dark: #171718;
+	--light: #fff;
+	--accent: #5C62EC;
+
+	--bg-color-dark: var(--dark);
+	--bg-color-light: var(--light);
+
+	--font-color-dark: var(--dark);
+	--font-color-light: var(--light);
+	--font-color-accent: var(--accent);
+
+	--dark-border: #26292D;
+	--light-border: var(--light);
+	--accent-border: var(--accent);
+}
