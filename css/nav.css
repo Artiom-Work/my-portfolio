@@ -3,6 +3,7 @@
 	background-color: var(--bg-color-dark);
 	color: var(--font-color-light);
 	border: 1px solid var(--dark-border);
+	letter-spacing: normal;
 }
 
 .nav__row {

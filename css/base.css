@@ -1,0 +1,33 @@
+body {
+	font-family: var(--main-font);
+	letter-spacing: -0.5px;
+	color: var(--font-color-dark);
+}
+
+a,
+button {
+	transition: all 0.4s ease 0s;
+}
+
+.container {
+	padding: 0 15px;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* ----Buttons---- */
+.btn {
+	display: inline-block;
+	height: 48px;
+	padding: 12px 28px;
+	border-radius: 5px;
+	background-color: var(--accent);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.15px;
+	color: var(--font-color-light);
+}
+
+/* --------- */

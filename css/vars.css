@@ -3,7 +3,9 @@
 	--secondary-font: "Poppins", sans-serif;
 
 	--dark: #171718;
+	--secondary-dark: #26292D;
 	--light: #fff;
+	--secondary-light: #fafafa;
 	--accent: #5C62EC;
 
 	--bg-color-dark: var(--dark);
@@ -13,7 +15,7 @@
 	--font-color-light: var(--light);
 	--font-color-accent: var(--accent);
 
-	--dark-border: #26292D;
+	--dark-border: var(--secondary-dark);
 	--light-border: var(--light);
 	--accent-border: var(--accent);
 }
