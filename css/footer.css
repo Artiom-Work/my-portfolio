@@ -1,0 +1,20 @@
+.footer {
+	padding: 60px 0 50px;
+	background-color: var(--bg-color-dark);
+	color: var(--font-color-light);
+}
+
+.footer__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 27px;
+	align-items: center;
+}
+
+.footer__copyright {
+	font-size: 16px;
+}
+
+.footer__copyright p+p {
+	padding-top: .5em;
+}

@@ -4,7 +4,9 @@
 /* ---Blocks--- */
 @import 'base.css';
 @import 'logo.css';
+@import 'socials.css';
 /* ---Sections--- */
 @import 'nav.css';
 @import 'header.css';
 @import 'projects.css';
+@import 'footer.css';

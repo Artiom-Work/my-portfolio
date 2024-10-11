@@ -16,6 +16,10 @@ button {
 	margin: 0 auto;
 }
 
+.none {
+	display: none !important;
+}
+
 /* ----Buttons---- */
 .btn {
 	display: inline-block;
