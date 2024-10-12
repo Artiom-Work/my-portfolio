@@ -34,4 +34,22 @@ button {
 	color: var(--font-color-light);
 }
 
+.btn-outline {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	padding: 12px 20px;
+	height: 48px;
+	border-radius: 5px;
+	border: 1px solid;
+	color: var(--font-color-dark);
+	letter-spacing: 0.15px;
+	font-weight: 500;
+}
+
+.btn-outline__icon {
+	width: 24px;
+	height: 23.4px;
+}
+
 /* --------- */

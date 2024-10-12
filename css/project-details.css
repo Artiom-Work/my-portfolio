@@ -1,0 +1,33 @@
+.project-details {
+	margin: 0 auto;
+	padding: 70px 0;
+	max-width: 865px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.project-details__title {
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 130%;
+	text-align: center;
+	color: var(--font-color-accent);
+	margin-bottom: 40px;
+}
+
+.project-details__image {
+	max-width: 100%;
+	margin-bottom: 40px;
+
+	border-radius: 10px;
+	box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.25);
+}
+
+.project-details__desc {
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 130%;
+}
