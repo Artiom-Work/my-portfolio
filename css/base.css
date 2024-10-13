@@ -79,3 +79,19 @@ button {
 }
 
 /* --------- */
+@media (max-width:620px) {
+	.main-title {
+		margin-bottom: 30px;
+		font-size: 40px;
+	}
+
+	.main-title--mb {
+		margin-bottom: 30px;
+	}
+
+	.secondary-title {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+}
