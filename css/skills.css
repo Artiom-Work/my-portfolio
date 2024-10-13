@@ -29,3 +29,19 @@
 .content-list__link--tel {
 	color: var(--font-color-dark);
 }
+
+@media (max-width:620px) {
+
+	.skills,
+	.contacts {
+		padding: 40px 0;
+	}
+
+	.content-list {
+		row-gap: 20px;
+	}
+
+	.content-list__item {
+		font-size: 16px;
+	}
+}

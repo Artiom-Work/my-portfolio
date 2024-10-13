@@ -19,3 +19,17 @@
 .footer__copyright p+p {
 	padding-top: .5em;
 }
+
+@media (max-width:620px) {
+	.footer {
+		padding: 30px 0;
+	}
+
+	.footer__wrapper {
+		row-gap: 20px;
+	}
+
+	.footer__copyright {
+		font-size: 14px;
+	}
+}
