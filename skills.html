@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
-	<title>Project page</title>
+	<title>Skills</title>
 </head>
 
 <body>
@@ -18,10 +18,10 @@
 				</div>
 				<ul class="nav-list">
 					<li>
-						<a class="nav-list__link nav-list__link--active" href="./index.html">Projects</a>
+						<a class="nav-list__link" href="./index.html">Projects</a>
 					</li>
 					<li>
-						<a class="nav-list__link" href="./skills.html">Skills</a>
+						<a class="nav-list__link nav-list__link--active" href="./skills.html">Skills</a>
 					</li>
 					<li>
 						<a class="nav-list__link" href="./contacts.html">Contacts</a>
@@ -32,22 +32,25 @@
 	</nav>
 
 	<main>
-		<section class="project-details">
-			<h1 class="main-title">Video service</h1>
-
-			<img class="project-details__image" src="./images/projects/02-big.jpg" srcset="./images/projects/02-big@2x.jpg"
-				alt="Project image">
-
-			<div class="project-details__desc">
-				<p>Skills: React, Node.js, MongoDB</p>
+		<section class="skills contacts">
+			<div class="container">
+				<h1 class="main-title">Skills</h1>
+				<ul class="content-list">
+					<li class="content-list__item">
+						<h2 class="secondary-title">Frontend</h2>
+						<p>
+							JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, NPM, BootStrap, MaterialUI, Yarn, TailwindCSS,
+							StyledComponents
+						</p>
+					</li>
+					<li class="content-list__item">
+						<h2 class="secondary-title">Backend</h2>
+						<p>
+							NodeJS, MySQL, MongoDB, PHP, Laravel
+						</p>
+					</li>
+				</ul>
 			</div>
-
-			<a class="btn-outline" href="https://github.com/Artiom-Work">
-				<svg class="btn-outline__icon" viewBox="0 0 24 24">
-					<use xlink:href="/images/sprite-icons.svg#social-github-black"></use>
-				</svg>
-				GitHub repo
-			</a>
 		</section>
 	</main>
 

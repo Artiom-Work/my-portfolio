@@ -1,7 +1,11 @@
+html,
 body {
 	font-family: var(--main-font);
 	letter-spacing: -0.5px;
 	color: var(--font-color-dark);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 a,
@@ -18,6 +22,28 @@ button {
 
 .none {
 	display: none !important;
+}
+
+.main-title {
+	margin-bottom: 40px;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 130%;
+	text-align: center;
+	color: var(--font-color-accent);
+}
+
+.main-title--mb {
+	margin-bottom: 60px;
+}
+
+.secondary-title {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	text-align: center;
+	color: var(--font-color-dark);
 }
 
 /* ----Buttons---- */

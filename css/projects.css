@@ -2,15 +2,6 @@
 	padding: 70px 0;
 }
 
-.projects__title {
-	margin-bottom: 60px;
-	font-weight: 700;
-	font-size: 60px;
-	line-height: 130%;
-	text-align: center;
-	color: var(--font-color-accent);
-}
-
 .projects__list {
 	display: flex;
 	flex-wrap: wrap;

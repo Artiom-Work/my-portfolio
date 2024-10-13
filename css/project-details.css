@@ -8,15 +8,6 @@
 	text-align: center;
 }
 
-.project-details__title {
-	font-weight: 700;
-	font-size: 60px;
-	line-height: 130%;
-	text-align: center;
-	color: var(--font-color-accent);
-	margin-bottom: 40px;
-}
-
 .project-details__image {
 	max-width: 100%;
 	margin-bottom: 40px;
