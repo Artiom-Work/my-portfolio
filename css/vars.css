@@ -18,4 +18,24 @@
 	--dark-border: var(--secondary-dark);
 	--light-border: var(--light);
 	--accent-border: var(--accent);
+	/* -----light----- */
+
+	--page-bg: var(--light);
+	--text-color: var(--dark);
+	--main-title-color: var(--accent);
+
+	--porject-cart-background: var(--dark);
+	--porject-cart-text: var(--light);
+
+	--box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: var(--light);
+	--main-title-color: var(--light);
+	--porject-cart-background: var(--light);
+	--porject-cart-text: var(--dark);
+	--box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.8);
 }

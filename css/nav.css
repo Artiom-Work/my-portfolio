@@ -8,11 +8,15 @@
 
 .nav__row {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 	column-gap: 30px;
 	row-gap: 20px;
 	flex-wrap: wrap;
+}
+
+.nav__logo {
+	margin-right: auto;
 }
 
 .nav-list {
@@ -42,4 +46,11 @@
 	height: 2px;
 	top: 100%;
 	background-color: var(--accent);
+}
+
+@media (max-width:620px) {
+	.nav__row {
+		justify-content: center;
+	}
+
 }
