@@ -2,11 +2,11 @@
 	--main-font: "DM Sans", sans-serif;
 	--secondary-font: "Poppins", sans-serif;
 
-	--dark: #171718;
+	--dark: #111214;
 	--secondary-dark: #26292D;
-	--light: #fff;
-	--secondary-light: #fafafa;
-	--accent: #5C62EC;
+	--light: #a7aab4;
+	--secondary-light: #d6d5d5;
+	--accent: #c31616;
 
 	--bg-color-dark: var(--dark);
 	--bg-color-light: var(--light);
@@ -20,21 +20,22 @@
 	--accent-border: var(--accent);
 	/* -----light----- */
 
-	--page-bg: var(--light);
+	--page-bg: var(--secondary-light);
 	--text-color: var(--dark);
 	--main-title-color: var(--accent);
+	--secondary-title-color: var(--dark);
 
 	--porject-cart-background: var(--dark);
 	--porject-cart-text: var(--light);
 
 	--box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.25);
-
 }
 
 .dark {
-	--page-bg: #252526;
-	--text-color: var(--light);
-	--main-title-color: var(--light);
+	--page-bg: var(--secondary-dark);
+	--text-color: var(--secondary-light);
+	--main-title-color: var(--accent);
+	--secondary-title-color: var(--light);
 	--porject-cart-background: var(--light);
 	--porject-cart-text: var(--dark);
 	--box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.8);

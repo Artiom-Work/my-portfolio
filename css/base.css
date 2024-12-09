@@ -51,7 +51,7 @@ button {
 	font-size: 40px;
 	line-height: 130%;
 	text-align: center;
-	color: var(--font-color-dark);
+	color: var(--secondary-title-color);
 }
 
 /* ----Buttons---- */
@@ -109,13 +109,12 @@ button {
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
-	background-color: var(--light);
+	background-color: var(--accent);
 	transition: all 0.2s ease-in;
 }
 
 .dark-mode-btn--active::before {
 	left: 25px;
-
 }
 
 .dark-mode-btn__icon {

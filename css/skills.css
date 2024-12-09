@@ -22,12 +22,12 @@
 	margin-top: .5em;
 }
 
-.content-list__link {
-	color: var(--font-color-accent);
+.content-list__text {
+	color: var(--text-color);
 }
 
-.content-list__link--tel {
-	color: var(--font-color-dark);
+.content-list__link {
+	color: var(--font-color-accent);
 }
 
 @media (max-width:620px) {

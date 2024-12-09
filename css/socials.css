@@ -31,7 +31,7 @@
 	left: 9px;
 	top: 9px; */
 	transition: all 0.4s ease 0s;
-	fill: var(--light);
+	fill: var(--secondary-light);
 }
 
 @media (max-width:620px) {
@@ -42,5 +42,4 @@
 	.socials__icon {
 		width: 28px;
 	}
-
 }
