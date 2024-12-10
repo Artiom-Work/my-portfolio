@@ -1,6 +1,8 @@
 :root {
-	--main-font: "DM Sans", sans-serif;
-	--secondary-font: "Poppins", sans-serif;
+	--main-font: "Montserrat", sans-serif;
+	--secondary-font: "Anton Regular", "Vocal Bold", sans-serif;
+
+
 
 	--dark: #111214;
 	--secondary-dark: #26292D;

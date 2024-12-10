@@ -1,2 +1,36 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@font-face {
+	font-family: 'Anton Regular';
+	src: url('../fonts/anton-regular/anton_regular.eot');
+	src: url('../fonts/anton-regular/anton_regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/anton-regular/anton_regular.woff2') format('woff2'),
+		url('../fonts/anton-regular/anton_regular.woff') format('woff'),
+		url('../fonts/anton-regular/anton_regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Vocal Bold';
+	src: url('../fonts/vocal/Vocal-ExtraBold.eot');
+	src: local('Vocal Extra Bold'), local('Vocal-ExtraBold'),
+		url('../fonts/vocal/Vocal-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/vocal/Vocal-ExtraBold.woff2') format('woff2'),
+		url('../fonts/vocal/Vocal-ExtraBold.woff') format('woff'),
+		url('../fonts/vocal/Vocal-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Vocal Black';
+	src: url('../fonts/vocal/Vocal-ExtraBold.eot');
+	src: local('Vocal Black'), local('Vocal-Black'),
+		url('../fonts/vocal/Vocal-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/vocal/Vocal-Black.woff2') format('woff2'),
+		url('../fonts/vocal/Vocal-Black.woff') format('woff'),
+		url('../fonts/vocal/Vocal-ExtraBold.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
