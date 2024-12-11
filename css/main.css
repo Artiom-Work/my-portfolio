@@ -1,6 +1,7 @@
 @import 'reset.css';
 @import 'fonts.css';
 @import 'vars.css';
+@import 'animation-hover.css';
 /* ---Blocks--- */
 @import 'base.css';
 @import 'logo.css';

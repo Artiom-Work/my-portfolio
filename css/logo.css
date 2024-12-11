@@ -1,4 +1,26 @@
+.logo {
+	position: relative;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+
+.logo::after {
+	content: '';
+	position: absolute;
+	width: 69px;
+	height: 33px;
+	background: url(../images/logo/my-logo-v2-letters.svg) no-repeat center / cover;
+	left: 7px;
+	top: 1.5px;
+	z-index: 3;
+}
+
+.logo__image {
+	position: relative;
+	z-index: 5;
+}
+
 .logo__image {
 	width: 85.5px;
-	height: 47.3px;
+	height: 39.3px;
 }

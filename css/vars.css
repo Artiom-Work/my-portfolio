@@ -9,6 +9,8 @@
 	--light: #a7aab4;
 	--secondary-light: #d6d5d5;
 	--accent: #c31616;
+	--box-shadow-btns: 0px 0px 18px 3px rgba(169, 169, 170, 0.5);
+	--box-shadow-btns-dark: 0px 0px 18px 3px rgba(23, 22, 22, 0.5);
 
 	--bg-color-dark: var(--dark);
 	--bg-color-light: var(--light);
@@ -41,4 +43,5 @@
 	--porject-cart-background: var(--light);
 	--porject-cart-text: var(--dark);
 	--box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.8);
+	--box-shadow-btns-dark: var(--box-shadow-btns);
 }

@@ -57,13 +57,14 @@ button {
 .btn {
 	display: inline-block;
 	height: 48px;
-	padding: 12px 28px;
+	padding: 13px 24px;
 	border-radius: 5px;
 	background-color: var(--accent);
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 150%;
 	color: var(--font-color-light);
+	transition: all 0.4s ease 0s;
 }
 
 .btn-outline {
@@ -73,15 +74,16 @@ button {
 	padding: 12px 20px;
 	height: 48px;
 	border-radius: 5px;
-	border: 1px solid;
-	color: var(--font-color-dark);
-	letter-spacing: 0.15px;
-	font-weight: 500;
+	outline: 2px solid;
+	color: var(--accent-border);
+	font-weight: 600;
+	transition: all 0.4s ease 0s;
 }
 
 .btn-outline__icon {
 	width: 24px;
 	height: 23.4px;
+	fill: var(--accent);
 }
 
 /* --------- */
