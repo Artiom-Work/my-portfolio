@@ -10,26 +10,120 @@
 	row-gap: 30px;
 }
 
-/* .projects__list-item {
-} */
 .project {
+	position: relative;
 	max-width: 370px;
 	width: 100%;
+	min-height: 380px;
 	box-shadow: var(--box-shadow);
 	background: var(--porject-cart-background);
-	border-radius: 10px;
+	border-radius: 12px;
+	text-align: center;
+	z-index: 1;
+	outline: 3px solid var(--light);
+}
+
+.project__image-wrapper {
+	width: 370px;
+	height: 278px;
+	position: relative;
+	perspective: 500px;
+	display: block;
 }
 
 .project__image {
+	width: inherit;
+	height: inherit;
 	border-radius: 10px;
+	transition-duration: 0.5s;
+	transform: rotateY(0deg);
+	transition-timing-function: linear;
+	transition-delay: 0.5s;
+}
+
+.project__description {
+	padding: 20px 30px;
+	width: inherit;
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	border-radius: 10px;
+	transform: rotateY(90deg);
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../images/projects/back-background-project.jpg) no-repeat center / contain;
+}
+
+.project__description-heading {
+	font-size: 26px;
+	font-weight: 600;
+	font-family: var(--secondary-font);
+	letter-spacing: 1px;
+	color: var(--light);
+}
+
+.project__description-list {
+	max-width: 310px;
+	width: 100%;
+	min-height: 185px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.project__description-list li:last-child {
+	align-self: flex-end;
+}
+
+
+.project__description-text {
+	color: var(--secondary-light);
+	font-size: 18px;
+}
+
+.project__description-text--finished {
+	color: rgb(0, 176, 0);
+}
+
+.project__description-text--develop {
+	color: rgb(0, 0, 200);
+}
+
+.project__description-text--stop {
+	color: rgb(202, 202, 10);
+}
+
+.project__description-link {
+	display: inline-block;
+	color: var(--accent);
+	font-size: 22px;
+	font-weight: 600;
 }
 
 .project__name {
-	padding: 15px 20px 25px;
+	padding: 10px 20px;
 	font-weight: 700;
 	font-size: 24px;
+	font-family: var(--secondary-font);
+	letter-spacing: 1px;
 	line-height: 130%;
 	color: var(--porject-cart-text);
+}
+
+.project__btn {
+	height: unset;
+	padding: 8px 18px;
+	font-size: 14px;
+	color: var(--secondary-light);
+	letter-spacing: .3px;
 }
 
 @media (max-width:620px) {

@@ -35,6 +35,8 @@ button {
 	margin-bottom: 40px;
 	font-weight: 700;
 	font-size: 60px;
+	font-family: var(--secondary-font);
+	letter-spacing: 1px;
 	line-height: 130%;
 	text-align: center;
 	color: var(--main-title-color);
@@ -74,7 +76,7 @@ button {
 	padding: 12px 20px;
 	height: 48px;
 	border-radius: 5px;
-	outline: 2px solid;
+	outline: 2.5px solid;
 	color: var(--accent-border);
 	font-weight: 600;
 	transition: all 0.4s ease 0s;

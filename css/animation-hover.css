@@ -41,7 +41,7 @@
 
 	.btn-outline:hover {
 		color: var(--text-color);
-		outline: 1px solid var(--text-color);
+		outline: 2.5px solid var(--text-color);
 		box-shadow: var(--box-shadow-btns-dark);
 		-webkit-box-shadow: var(--box-shadow-btns-dark);
 		-moz-box-shadow: var(--box-shadow-btns-dark);
@@ -49,6 +49,29 @@
 
 	.btn-outline:hover .btn-outline__icon {
 		fill: var(--text-color);
+	}
+
+	.project__btn:hover {
+		box-shadow: var(--porject-cart-btn-bs);
+		-webkit-box-shadow: var(--porject-cart-btn-bs);
+		-moz-box-shadow: var(--porject-cart-btn-bs);
+	}
+
+	/* Effects for project cards in the main page */
+	.project__image-wrapper:hover .project__image {
+		transform: rotateY(-90deg);
+		transition-delay: 0s;
+	}
+
+	.project__image-wrapper:hover .project__description {
+		transform: rotateY(0deg);
+		transition-delay: 0.5s;
+	}
+
+	/* ======== */
+	.project__description-link:hover {
+		text-shadow: 0px 3px 8px rgba(197, 184, 184, 0.77);
+		transform: scale(1.1);
 	}
 
 	.socials__item:hover .socials__icon {
@@ -81,4 +104,14 @@
 .btn-outline:active {
 	transform: scale(.9);
 	outline: unset;
+}
+
+.project__description-link:active {
+	text-shadow: 0px 3px 8px rgba(197, 184, 184, 0.77);
+	transform: scale(0.9);
+	color: var(--light);
+}
+
+.socials__item:active {
+	transform: scale(.9);
 }
