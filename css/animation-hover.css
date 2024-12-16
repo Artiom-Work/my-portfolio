@@ -66,6 +66,7 @@
 	.project__image-wrapper:hover .project__description {
 		transform: rotateY(0deg);
 		transition-delay: 0.5s;
+		opacity: 1;
 	}
 
 	/* ======== */

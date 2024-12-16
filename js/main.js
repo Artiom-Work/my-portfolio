@@ -61,31 +61,44 @@ const swiper = new Swiper('.swiper', {
 	},
 });
 
+const mediaQueryMobile = window.matchMedia('(max-width: 678px)');
 const projectImages = document.querySelectorAll('.project__image-wrapper');
+let projectImage = '';
+let projectDescription = '';
 
-projectImages.forEach(element => {
-	const projectImage = element;
+if (mediaQueryMobile.matches) {
+	projectImages.forEach(element => {
+		const projectImageWraper = element;
 
-	projectImage.addEventListener('click', (e) => {
-		const touchedImage = e.target;
-		const projectDescription = touchedImage.nextElementSibling;
-
-		rotateProjectImage(touchedImage, projectDescription);
+		projectImageWraper.addEventListener('click', (e) => {
+			projectImage = projectImageWraper.querySelector('.project__image');
+			projectDescription = projectImageWraper.querySelector('.project__description');
+			if (e.target === projectImage) {
+				rotateImage();
+			}
+			if (e.target.closest('.project__description') === projectDescription) {
+				rotateDescroption();
+			}
+		});
 	});
-});
+}
 
-function rotateProjectImage(image, description) {
-	image.style.transitionDelay = '0s';
-	description.style.transitionDelay = '0.5s';
+function rotateImage() {
+	projectImage.style.transitionDelay = '0s';
+	projectImage.style.opacity = '0';
+	projectDescription.style.transitionDelay = '0.5s';
+	projectDescription.style.opacity = '1';
+	projectImage.style.transform = "rotateY(-90deg)";
+	projectDescription.style.transform = "rotateY(0deg)";
+}
 
-	image.style.transform = "rotateY(-90deg)";
-	description.style.transform = "rotateY(0deg)";
+function rotateDescroption() {
+	projectDescription.style.transitionDelay = '0s';
+	projectImage.style.transitionDelay = "0.5s";
+	projectImage.style.opacity = '1';
 
-	description.addEventListener('click', (e) => {
-		description.style.transitionDelay = '0s';
-		image.style.transitionDelay = "0.5s";
-		description.style.transform = "rotateY(90deg)";
-		image.style.transform = "rotateY(0deg)";
-	});
+	projectDescription.style.transform = "rotateY(90deg)";
+	projectImage.style.transform = "rotateY(0deg)";
+	projectDescription.style.opacity = '0';
 }
 // -------------------
