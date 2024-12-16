@@ -1,4 +1,15 @@
 @font-face {
+	font-family: 'League Gothic';
+	src: url('../fonts/league-gothic/league-gothic.eot');
+	src: url('../fonts/league-gothic/league-gothic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/league-gothic/league-gothic.woff2') format('woff2'),
+		url('../fonts/league-gothic/league-gothic.woff') format('woff'),
+		url('../fonts/league-gothic/league-gothic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'Anton Regular';
 	src: url('../fonts/anton-regular/anton_regular.eot');
 	src: url('../fonts/anton-regular/anton_regular.eot?#iefix') format('embedded-opentype'),
@@ -6,30 +17,6 @@
 		url('../fonts/anton-regular/anton_regular.woff') format('woff'),
 		url('../fonts/anton-regular/anton_regular.ttf') format('truetype');
 	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Vocal Bold';
-	src: url('../fonts/vocal/Vocal-ExtraBold.eot');
-	src: local('Vocal Extra Bold'), local('Vocal-ExtraBold'),
-		url('../fonts/vocal/Vocal-ExtraBold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/vocal/Vocal-ExtraBold.woff2') format('woff2'),
-		url('../fonts/vocal/Vocal-ExtraBold.woff') format('woff'),
-		url('../fonts/vocal/Vocal-ExtraBold.ttf') format('truetype');
-	font-weight: 800;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Vocal Black';
-	src: url('../fonts/vocal/Vocal-ExtraBold.eot');
-	src: local('Vocal Black'), local('Vocal-Black'),
-		url('../fonts/vocal/Vocal-ExtraBold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/vocal/Vocal-Black.woff2') format('woff2'),
-		url('../fonts/vocal/Vocal-Black.woff') format('woff'),
-		url('../fonts/vocal/Vocal-ExtraBold.ttf') format('truetype');
-	font-weight: 900;
 	font-style: normal;
 }
 

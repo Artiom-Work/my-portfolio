@@ -69,6 +69,13 @@
 	}
 
 	/* ======== */
+	.project:hover {
+		transform: scale(1.03);
+		box-shadow: var(--box-shadow-hover);
+		-webkit-box-shadow: var(--box-shadow-hover);
+		-moz-box-box-shadow: var(--box-shadow-hover);
+	}
+
 	.project__description-link:hover {
 		text-shadow: 0px 3px 8px rgba(197, 184, 184, 0.77);
 		transform: scale(1.1);

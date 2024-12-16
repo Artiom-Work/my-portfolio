@@ -43,3 +43,49 @@ darkModeBtn.onclick = function () {
 		localStorage.setItem('darkMode', 'light');
 	}
 }
+
+
+// Main page , slider swiper
+const swiper = new Swiper('.swiper', {
+	slidesPerView: 1,
+	centeredSlides: true,
+	spaceBetween: 0,
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'fraction',
+	},
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+
+const projectImages = document.querySelectorAll('.project__image-wrapper');
+
+projectImages.forEach(element => {
+	const projectImage = element;
+
+	projectImage.addEventListener('click', (e) => {
+		const touchedImage = e.target;
+		const projectDescription = touchedImage.nextElementSibling;
+
+		rotateProjectImage(touchedImage, projectDescription);
+	});
+});
+
+function rotateProjectImage(image, description) {
+	image.style.transitionDelay = '0s';
+	description.style.transitionDelay = '0.5s';
+
+	image.style.transform = "rotateY(-90deg)";
+	description.style.transform = "rotateY(0deg)";
+
+	description.addEventListener('click', (e) => {
+		description.style.transitionDelay = '0s';
+		image.style.transitionDelay = "0.5s";
+		description.style.transform = "rotateY(90deg)";
+		image.style.transform = "rotateY(0deg)";
+	});
+}
+// -------------------

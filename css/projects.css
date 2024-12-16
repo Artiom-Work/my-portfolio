@@ -21,6 +21,7 @@
 	text-align: center;
 	z-index: 1;
 	outline: 3px solid var(--light);
+	transition: all 0.2s ease 0s;
 }
 
 .project__image-wrapper {
@@ -61,7 +62,7 @@
 }
 
 .project__description-heading {
-	font-size: 26px;
+	font-size: 30px;
 	font-weight: 600;
 	font-family: var(--secondary-font);
 	letter-spacing: 1px;
@@ -82,7 +83,6 @@
 .project__description-list li:last-child {
 	align-self: flex-end;
 }
-
 
 .project__description-text {
 	color: var(--secondary-light);
@@ -126,9 +126,122 @@
 	letter-spacing: .3px;
 }
 
-@media (max-width:620px) {
+.projects__swiper {
+	display: none !important;
+}
+
+@media(min-width:679px) and (max-width:815px) {
 	.projects {
-		padding: 40px 0;
+		padding: 30px 0;
+	}
+
+	.projects__list {
+		row-gap: 10px;
+		column-gap: 10px;
+	}
+
+	.project {
+		max-width: 310px;
+		min-height: 332px;
+		margin: 0 auto;
+	}
+
+	.project__image-wrapper {
+		width: 310px;
+		height: 232px;
+	}
+
+	.project__description {
+		padding: 10px 15px;
+		gap: 10px;
+	}
+
+	.project__description-heading {
+		font-size: 20px;
+	}
+
+	.project__description-list {
+		max-width: 280px;
+		min-height: 170px;
+		gap: 10px;
+	}
+
+	.project__description-text {
+		font-size: 14px;
+	}
+
+	.project__description-link {
+		font-size: 18px;
+	}
+
+	.project__name {
+		font-size: 20px;
+	}
+}
+
+@media (max-width:678px) {
+	.projects {
+		padding: 20px 0 20px;
+	}
+
+	.projects .container {
+		padding: 0;
+	}
+
+	.projects__list {
+		display: none;
+	}
+
+	.projects__swiper {
+		display: block !important;
+	}
+
+	.project {
+		margin: 0 auto;
+	}
+
+	.project__image-wrapper {
+		perspective: 1100px;
+	}
+
+}
+
+@media (max-width:420px) {
+	.projects {
+		padding: 20px 0 0px;
+	}
+
+	.project {
+		max-width: 310px;
+		min-height: 332px;
+	}
+
+	.project__image-wrapper {
+		width: 310px;
+		height: 232px;
+	}
+
+	.project__description {
+		padding: 10px 15px;
+		gap: 10px;
+	}
+
+	.project__description-heading {
+		font-size: 20px;
+	}
+
+	.project__description-list {
+		max-width: 280px;
+		min-height: 170px;
+		gap: 10px;
+	}
+
+	.project__description-text {
+		font-size: 14px;
+	}
+
+	.project__description-link {
+		font-size: 18px;
 	}
 
 	.project__name {
