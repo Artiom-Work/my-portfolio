@@ -102,3 +102,24 @@ function rotateDescroption() {
 	projectDescription.style.opacity = '0';
 }
 // -------------------
+
+// For mobile menu
+const menuCheckbox = document.getElementById('menu-switch');
+const lockPageBackground = document.querySelector('.mobile-menu__wrapper');
+const mobileMenu = document.querySelector('.mobile-menu__box');
+
+menuCheckbox.addEventListener('change', function (e) {
+	if (menuCheckbox.checked) {
+		document.body.style.overflow = "hidden";
+	} else {
+		document.body.style.overflow = "visible";
+	}
+});
+
+lockPageBackground.addEventListener('click', (e) => {
+	if (e.target === lockPageBackground) {
+		menuCheckbox.checked = false;
+		document.body.style.overflow = "visible";
+	}
+});
+// ----------------

@@ -28,17 +28,48 @@
 						<img class="dark-mode-btn__icon" src="./images/icons/moon.svg" alt="Dark mode">
 					</button>
 
-					<ul class="nav-list">
+					<ul class="nav-list nav-list--desktop">
 						<li class="nav-list__item">
 							<a class="nav-list__link nav-list__link--active" href="./index.html">Projects</a>
 						</li>
 						<li class="nav-list__item">
-							<a class="nav-list__link" href="./skills.html">Skills</a>
+							<a class="nav-list__link" href="#!">Skills</a>
 						</li>
 						<li class="nav-list__item">
 							<a class="nav-list__link" href="./contacts.html">Contacts</a>
 						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link" href="#!">About&nbsp;me</a>
+						</li>
 					</ul>
+
+					<div class="mobile-menu">
+						<input id="menu-switch" type="checkbox">
+						<label class="mobile-menu__burger" for="menu-switch">
+							<span></span>
+						</label>
+						<div class="mobile-menu__wrapper">
+							<nav class="mobile-menu__box">
+								<ul class="nav-list">
+									<label class="mobile-menu__box-close-btn" for="menu-switch">
+										<span></span>
+									</label>
+									<li class="nav-list__item">
+										<a class="nav-list__link nav-list__link--active" href="./index.html">Projects</a>
+									</li>
+									<li class="nav-list__item">
+										<a class="nav-list__link" href="#!">Skills</a>
+									</li>
+									<li class="nav-list__item">
+										<a class="nav-list__link" href="./contacts.html">Contacts</a>
+									</li>
+									<li class="nav-list__item">
+										<a class="nav-list__link" href="#!">About&nbsp;me</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -683,11 +714,11 @@
 						<div class="swiper-slide">
 							<div class="projects__list-item project">
 								<div class="project__image-wrapper">
-									<img class="project__image" src="images/projects/surf-house.jpg"
-										srcset="images/projects/surf-house.jpg" alt="Surfing goods store">
+									<img class="project__image" src="images/projects/bravaa.jpg" srcset="images/projects/bravaa@2x.jpg"
+										alt="Gym">
 									<div class="project__description">
 
-										<h4 class="project__description-heading">Surfing goods store</h4>
+										<h4 class="project__description-heading">Gym</h4>
 
 										<ul class="project__description-list">
 											<li>
@@ -696,8 +727,8 @@
 												</p>
 											</li>
 											<li>
-												<p class="project__description-text">
-													The external part of the main page of the online store of goods for surfing.
+												<p class="project__description-text" translate="no">
+													Landing page.
 												</p>
 											</li>
 											<li>
@@ -713,8 +744,8 @@
 									</div>
 								</div>
 
-								<h3 class="project__name" translate="no">Surf&nbsp;House</h3>
-								<a class="project__btn btn" href="https://artiom-work.github.io/SURFHOUSE/"
+								<h3 class="project__name" translate="no">Bravaa</h3>
+								<a class="project__btn btn" href="https://artiom-work.github.io/bravaa/"
 									target="_blank">Watch&nbsp;project</a>
 							</div>
 						</div>
