@@ -1,14 +1,16 @@
 "use strict";
 
+
+// Dark mode in the site
 const darkModeBtn = document.querySelector('.dark-mode-btn');
 
-// 1. Проверка тёмной на уровне системных настроек пользователя
+// 1. Checking dark mode at user system settings
 if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
 	darkModeBtn.classList.add("dark-mode-btn--active");
 	document.body.classList.add("dark");
 }
 
-// 2. Проверка тёмной темы в local storage
+// 2. Checking dark theme in local storage
 if (localStorage.getItem('darkMode') === 'dark') {
 	darkModeBtn.classList.add("dark-mode-btn--active");
 	document.body.classList.add("dark");
@@ -17,9 +19,9 @@ if (localStorage.getItem('darkMode') === 'dark') {
 	document.body.classList.remove("dark");
 }
 
-// Если меняются системные настройки пользователя , меняем тему
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
-	const newColorShame = event.matches ? "dark" : "light";
+// If the user's system settings change, change the theme
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+	const newColorShame = e.matches ? "dark" : "light";
 
 	if (newColorShame === "dark") {
 		darkModeBtn.classList.add("dark-mode-btn--active");
@@ -32,7 +34,7 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (ev
 	}
 });
 
-// Включение ночного режима по кнопке
+// Turn on night mode by click the button
 darkModeBtn.onclick = function () {
 	darkModeBtn.classList.toggle('dark-mode-btn--active');
 	const isDark = document.body.classList.toggle('dark');
@@ -43,7 +45,7 @@ darkModeBtn.onclick = function () {
 		localStorage.setItem('darkMode', 'light');
 	}
 }
-
+// ==================
 
 // Main page , slider swiper
 const swiper = new Swiper('.swiper', {
@@ -108,7 +110,7 @@ const menuCheckbox = document.getElementById('menu-switch');
 const lockPageBackground = document.querySelector('.mobile-menu__wrapper');
 const mobileMenu = document.querySelector('.mobile-menu__box');
 
-menuCheckbox.addEventListener('change', function (e) {
+menuCheckbox.addEventListener('change', function () {
 	if (menuCheckbox.checked) {
 		document.body.style.overflow = "hidden";
 	} else {

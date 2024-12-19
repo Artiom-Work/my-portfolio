@@ -14,7 +14,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	column-gap: 30px;
+	column-gap: 20px;
 	row-gap: 20px;
 	flex-wrap: wrap;
 }
@@ -80,8 +80,7 @@
 	border-radius: 2px;
 	width: 26px;
 	height: 3.5px;
-	background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(195, 22, 22, 0.7) 58%, rgba(0, 0, 0, 1) 100%);
-	/* background-color: var(--accent); */
+	background: var(--accent);
 }
 
 .mobile-menu__burger span::after,
@@ -91,20 +90,19 @@
 	left: 0;
 	top: -6px;
 	width: 26px;
-	height: 4px;
-	background-color: var(--light);
+	height: 3.5px;
 	border-radius: 2px;
 	transition: all 0.8s ease 0s;
 }
 
 .mobile-menu__burger span::before {
-	background: linear-gradient(135deg, rgba(0, 0, 0, 1) 15%, rgba(195, 22, 22, 0.5) 94%, rgba(0, 0, 0, 1) 100%)
+	background: var(--accent);
+	height: 4px;
 }
 
 .mobile-menu__burger span::after {
 	top: 6px;
-	height: 3.5px;
-	background: linear-gradient(135deg, rgba(0, 0, 0, 1) -17%, rgba(195, 22, 22, 0.8) 36%, rgba(0, 0, 0, 1) 76%)
+	background: var(--accent);
 }
 
 #menu-switch[type="checkbox"]:checked~.mobile-menu__burger {
@@ -154,7 +152,7 @@
 	top: 10px;
 	width: 26px;
 	height: 4px;
-	background: linear-gradient(39deg, #c31616 -20%, #000 78%);
+	background: var(--accent);
 	border-radius: 2px;
 	transition: all 0.8s ease 0s;
 	transform: rotate(-45deg);
@@ -162,7 +160,7 @@
 
 .mobile-menu__box-close-btn::before {
 	transform: rotate(45deg);
-	background: linear-gradient(293deg, #c31616 -20%, #000 78%);
+	background: var(--accent);
 }
 
 .menu-list {
@@ -180,7 +178,12 @@
 /* ====END-mobile-menu==== */
 @media (max-width:678px) {
 	.nav__row {
-		justify-content: center;
+		justify-content: flex-start;
+		column-gap: 15px;
+	}
+
+	.nav__logo {
+		margin: 0;
 	}
 
 	.mobile-menu {

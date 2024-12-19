@@ -25,6 +25,13 @@
 						<img class="dark-mode-btn__icon" src="./images/icons/moon.svg" alt="Dark mode">
 					</button>
 
+					<div class="lang-switch">
+						<div id="google_translate_element"></div>
+						<button id="translate-to-english" class="translate-button translate-button--left" translate="no">en</button>
+						<button id="translate-to-russian" class="translate-button translate-button--right"
+							translate="no">ru</button>
+					</div>
+
 					<ul class="nav-list nav-list--desktop">
 						<li class="nav-list__item">
 							<a class="nav-list__link" href="./index.html">Projects</a>
@@ -131,12 +138,21 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
 	</footer>
 	<script type="module" src="./js/main.js"></script>
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({
+				pageLanguage: 'en',
+				includedLanguages: 'en,ru',
+				layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+				autoDisplay: false
+			}, 'google_translate_element');
+		}
+	</script>
+	<script type="text/javascript" src="./js/laguage-page.js"></script>
+	<script type="text/javascript"
+		src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
