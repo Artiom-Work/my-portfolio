@@ -12,7 +12,6 @@ const languages = {
 		setLanguage('en');
 	}
 };
-console.log(languages);
 
 document.getElementById('translate-to-english').addEventListener('click', languages.en);
 document.getElementById('translate-to-russian').addEventListener('click', languages.ru);
