@@ -1,4 +1,4 @@
-# $\color{red}\text{My portfolio}$
+# $\color{red}\textsf{My portfolio}$
 
 $\color{limegreen}\text{Учебная работа}$
 
