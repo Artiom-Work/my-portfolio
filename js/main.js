@@ -1,9 +1,6 @@
 "use strict";
-
-
 // Dark mode in the site
 const darkModeBtn = document.querySelector('.dark-mode-btn');
-
 // 1. Checking dark mode at user system settings
 if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
 	darkModeBtn.classList.add("dark-mode-btn--active");
@@ -63,7 +60,7 @@ const swiper = new Swiper('.swiper', {
 	},
 });
 
-const mediaQueryMobile = window.matchMedia('(max-width: 678px)');
+const mediaQueryMobile = window.matchMedia('(max-width: 768px)');
 const projectImages = document.querySelectorAll('.project__image-wrapper');
 let projectImage = '';
 let projectDescription = '';
