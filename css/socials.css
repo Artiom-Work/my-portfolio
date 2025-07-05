@@ -32,6 +32,10 @@
 	left: 7px;
 }
 
+.socials__icon--kwork {
+	fill: var(--dark);
+}
+
 @media (max-width:620px) {
 	.socials__list {
 		gap: 20px;
