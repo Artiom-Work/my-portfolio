@@ -81,6 +81,10 @@
 	justify-content: space-between;
 }
 
+.project__description-list--medium-height {
+	min-height: 145px;
+}
+
 .project__description-list li:last-child {
 	align-self: flex-end;
 }
