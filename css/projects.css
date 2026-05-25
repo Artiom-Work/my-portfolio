@@ -83,6 +83,7 @@
 
 .project__description-list--medium-height {
 	min-height: 145px;
+	flex-grow: 1;
 }
 
 .project__description-list li:last-child {
@@ -111,6 +112,7 @@
 	color: var(--accent);
 	font-size: 22px;
 	font-weight: 600;
+	will-change: transform;
 }
 
 .project__name {
@@ -129,6 +131,7 @@
 	font-size: 14px;
 	color: var(--secondary-light);
 	letter-spacing: .3px;
+	will-change: transform;
 }
 
 .projects__swiper {
